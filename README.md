@@ -1,4 +1,4 @@
-1. complete collection viw layout
+1. complete collection view layout
 
 2.open setting http://stackoverflow.com/questions/4092162/how-can-i-open-the-settings-app-when-the-user-presses-a-button
 
