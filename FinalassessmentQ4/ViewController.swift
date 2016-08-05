@@ -71,26 +71,26 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             if let url = NSURL(string: path) {
                 UIApplication.sharedApplication().openURL(url)
             }
-//        case 5:
-//            let emailTitle = "測試信件"
-//            let mc: MFMailComposeViewController = MFMailComposeViewController()
-//            mc.mailComposeDelegate = self
-//            mc.setSubject(emailTitle)
-//            self.presentViewController(mc, animated: true, completion: nil)
+        case 5:
+            let emailTitle = "測試信件"
+            let mc: MFMailComposeViewController = MFMailComposeViewController()
+            mc.mailComposeDelegate = self
+            mc.setSubject(emailTitle)
+            self.presentViewController(mc, animated: true, completion: nil)
         default:
             break
         }
     }
-//
-//    func mailComposeController(controller:MFMailComposeViewController, didFinishWithResult result:MFMailComposeResult, error:NSError?) {
-//        switch result {
-//        case MFMailComposeResultCancelled:
-//            print("Mail cancelled")
-//        default:
-//            break
-//        }
-//         self.dismissViewControllerAnimated(true, completion: nil)
-//    }
+
+    func mailComposeController(controller:MFMailComposeViewController, didFinishWithResult result:MFMailComposeResult, error:NSError?) {
+        switch result {
+        case MFMailComposeResultCancelled:
+            print("Mail cancelled")
+        default:
+            break
+        }
+         self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     
